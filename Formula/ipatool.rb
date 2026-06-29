@@ -1,25 +1,25 @@
 class Ipatool < Formula
   desc "A terminal UI and CLI for searching, purchasing, and downloading iOS App Store IPA files."
   homepage "https://github.com/Kosthi/ipatool-rs"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.0/ipatool-aarch64-apple-darwin.tar.xz"
-      sha256 "d2166b125e72559d30ca0634026050bd6b0a7e131f73946d7a013677207f40d6"
+      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.1/ipatool-aarch64-apple-darwin.tar.xz"
+      sha256 "046639b64628eb167ab0e5fd05f80aa9f771ffe4de1575821201449933150d95"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.0/ipatool-x86_64-apple-darwin.tar.xz"
-      sha256 "cfc23d3d827876896117054d8d684a83e62bad98e1185233624ad6dc32a1e98d"
+      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.1/ipatool-x86_64-apple-darwin.tar.xz"
+      sha256 "17ef751345deebf36d4991b0910b50d7c46f4ebb808b414d6e004f70ca36eb7a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.0/ipatool-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "95c99405e204b3f053583344d0a5c27bb417c844ecf70cfd46e09839300b7d04"
+      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.1/ipatool-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7772579ad4aa03e1f5de91fd720035c162f9ee257dce3b98ac59baf6248236af"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.0/ipatool-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "0df8168ba5208b9d3dd3a7f595c2f297f680194e6c429c61ab56ac7e25c245cd"
+      url "https://github.com/Kosthi/ipatool-rs/releases/download/v0.1.1/ipatool-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "212f291993305f10befbdd0974d63221e9caab0859f0e2ea63a04662e780c896"
     end
   end
   license "MIT"
